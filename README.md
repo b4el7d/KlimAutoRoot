@@ -1,6 +1,6 @@
 ![HMV](https://user-images.githubusercontent.com/88251142/127750374-1784427f-5597-4e8d-a40a-1410de3ea777.png)
 
-# My WriteUp of KLIM (medium) of https://hackmyvm.eu/
+# WriteUp of KLIM (medium) of https://hackmyvm.eu/
 ## This is an autoroot written in bash.
 
 ### Is required to have installed:
